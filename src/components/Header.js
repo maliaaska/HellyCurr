@@ -1,17 +1,16 @@
 import React from 'react';
 
-const Header = (props) => (
-        <div className='header'>
-        <div className="container">
-        <h1 className='header__title'>{props.title}</h1>
-        {props.subtitle &&  <h2 className="header__subtitle">{props.subtitle}</h2>}
-        </div>
-           
-        </div>
-);
- 
-Header.defaultProps = {
-    title: 'IndecisionApp'
+export default class Header extends React.Component {
+  render() {
+    return (
+      <div>
+        <header className="header">
+          <p>About me </p>
+          <p>My Objectives </p>
+          <p>My Awchivements </p>
+          <p>My Projects </p>
+        </header>
+      </div>
+    );
+  };
 };
-
-export default Header;
